@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/computer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 35, 58, 0.767);
+    z-index: -1;
+}
+
+body .title {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    font-family: '-apple-system';
+    color: whitesmoke;
+}
+
+body .title h3 {
+    padding-top: 5px;
+    margin-bottom: 12px;
+}
+
+
+section {
+    margin: 20px auto 0;
+    padding: 55px 50px 70px;
+    background-color: rgba(21, 12, 53, 0.76);
+    text-align: center;
+    width: 45%;
+    color: whitesmoke;
+    font-family: system-ui;
+    border-radius: 3px;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 19px;
+}
+
+#survey-form input {
+    padding-left: 15px;
+}
+
+
+#survey-form span {
+    font-size: 14px;
+}
+
+#name,
+#email,
+#age,
+#comments,
+#dropdown {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: medium;
+    width: 100%;
+    border: none;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.checkbox {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.heading {
+    margin-bottom: 5px;
+}
+
+.textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+textarea::placeholder {
+    font-size: 17px;
+    font-family: italic;
+}
+
+#comments {
+    padding: 10px;
+    font-size: 15px;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    min-height: 110px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#submit {
+    width: 100%;
+    line-height: 40px;
+    border-radius: 2px;
+    background-color: rgb(56, 180, 104);
+    border: none;
+    color: whitesmoke;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    body {
+        background-image: url(images/mobile-bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(21, 35, 58, 0.767);
+        z-index: -1;
+    }
+
+    body .title {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-family: '-apple-system';
+        color: whitesmoke;
+    }
+
+    body .title h3 {
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    section {
+        margin: 20px auto 0;
+        padding: 20px 20px 50px;
+        background-color: rgba(21, 12, 53, 0.644);
+        text-align: center;
+        width: 85%;
+        color: whitesmoke;
+        font-family: system-ui;
+        border-radius: 3px;
+    }
+
+    #survey-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 17px;
+    }
+
+    #survey-form input {
+        padding-left: 12px;
+    }
+
+    #name,
+    #email,
+    #age,
+    #comments,
+    #dropdown {
+        height: 35px;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .heading {
+        margin:0 0 10px;
+        text-align: start;
+    }
+
+
+
+}
